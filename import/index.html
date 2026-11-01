@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Opening AtlasDays</title>
+<script>
+  // Without the app installed, iOS opens this page instead of AtlasDays.
+  // The stays travel in the fragment, which never reaches a server; pass it on.
+  location.replace("https://atlasdays.app/app/import/" + location.hash);
+</script>
+</head>
+<body>
+<p><a href="https://atlasdays.app/app/import/">Continue to atlasdays.app</a></p>
+</body>
+</html>
