@@ -4,6 +4,7 @@ Link host for "Open in AtlasDays" on [atlasdays.app](https://atlasdays.app). iOS
 
 - `.well-known/apple-app-site-association` lets AtlasDays open links under `/import/`.
 - `import/index.html` is where a browser lands when the app is not installed: it forwards to `https://atlasdays.app/app/import/` with the URL fragment unchanged.
+- `offers/home-screen.json` is read by the app's "Try Pro Free" Home Screen quick action: `code` is the offer code it pre-fills on the App Store redeem page, and `enabled: false` hides the action and sends taps to the normal paywall.
 - Every other path redirects to atlasdays.app.
 
 Published with GitHub Pages.
